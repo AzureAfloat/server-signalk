@@ -1,0 +1,61 @@
+
+{
+  "vessel": {
+    "name"  : "Skookum",
+    "brand" : "Gemini",
+    "type"  : "105Mc",
+    "uuid"  : "urn:mrn:signalk:uuid:c0d79334-4e25-4245-8892-54e8ccc8021d",
+    
+    "dimensions": {
+      "length": 11,
+      "width": 4.27,
+      "mast": 14,
+      "depthTransducer": 0.45,
+      "keel": 1.68 
+    }
+  },
+
+  "interfaces": {},
+
+  "ssl": false,
+  
+  "pipedProviders": [{
+    "id": "nmeaFromFile",
+    "pipeElements": [
+       { 
+         "type": "providers/filestream",
+         "options": {
+           "filename": "samples/skookum-simtrip.log"
+         },
+         "optionMappings": [
+           {
+             "fromAppProperty": "argv.nmeafilename",
+             "toOption": "filename"
+           }
+         ]
+       },
+       { 
+         "type": "providers/throttle",
+         "options": {
+            "rate": 500
+         }
+       },       
+       {
+         "type": "providers/liner"
+       },
+       {
+          "type": "providers/nmea0183-signalk",
+          "optionMappings": [
+            {
+             "fromAppProperty": "selfId",
+             "toOption": "selfId"
+            },
+            {
+             "fromAppProperty": "selfType",
+             "toOption": "selfType"
+            }
+          ]
+       }               
+    ]
+  }]
+}
