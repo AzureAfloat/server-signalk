@@ -17,6 +17,8 @@
 */
 
 require('please-upgrade-node')(require('../package.json'))
+require('dotenv').config();
+
 
 var Server = require('../lib');
 var server = new Server();
