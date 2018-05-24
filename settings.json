@@ -22,11 +22,11 @@
           "type": "providers/mdns-ws",
           "optionMappings": [
             {
-              "fromAppProperty": "argv.host",
+              "fromAppProperty": "argv.ikhost",
               "toOption": "host"
             },
             {
-              "fromAppProperty": "argv.port",
+              "fromAppProperty": "argv.ikport",
               "toOption": "port"
             }
           ]
