@@ -1,6 +1,6 @@
 {
-  "name": "signalk-server",
-  "version": "1.2.1",
+  "name": "server-signalk",
+  "version": "0.1.0",
   "description": "An implementation of a [Signal K](http://signalk.org) server for boats.",
   "main": "index.js",
   "scripts": {
@@ -37,10 +37,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SignalK/signalk-server-node.git"
+    "url": "https://github.com/azureafloat/server-signalk.git"
   },
   "bugs": {
-    "url": "https://github.com/SignalK/signalk-server-node/issues"
+    "url": "https://github.com/azureafloat/server-signalk/issues"
   },
   "keywords": [
     "signalk",
