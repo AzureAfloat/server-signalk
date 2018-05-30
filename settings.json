@@ -1,10 +1,12 @@
 {
   "vessel": {
     "name": "Skookum",
+    "mmsi": "338250881",
     "brand": "Gemini",
     "type": "105Mc",
     "uuid": "urn:mrn:signalk:uuid:c0d79334-4e25-4245-8892-54e8ccc8021d",
     "dimensions": {
+      "draft": 1.68,
       "length": 11,
       "width": 4.27,
       "mast": 14,
