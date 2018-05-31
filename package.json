@@ -4,36 +4,10 @@
   "description": "An implementation of a [Signal K](http://signalk.org) server for boats.",
   "main": "index.js",
   "scripts": {
-    "changelog": "github-changes -o signalk -r signalk-server-node -a --only-pulls --use-commit-body --data=pulls  --tag-name=v$npm_package_version",
-    "release": "git push --tags && git push && git tag -d latest && git push origin :refs/tags/latest && git tag latest && git push origin tag latest",
-    "start": "node bin/signalk-server -s settings.json --ikhost localhost --ikport 3001",
-    "test": "mocha --exit",
-    "precommit": "lint-staged",
-    "format": "prettier-standard lib/**/*.js* providers/*.js* test/*.js* index.js"
-  },
-  "lint-staged": {
-    "linters": {
-      "lib/**/*.js*": [
-        "prettier-standard",
-        "git add"
-      ],
-      "providers/*.js*": [
-        "prettier-standard",
-        "git add"
-      ],
-      "test/*.js*": [
-        "prettier-standard",
-        "git add"
-      ],
-      "index.js": [
-        "prettier-standard",
-        "git add"
-      ]
-    }
+    "start": "node bin/signalk-server -s settings.json --ikhost localhost --ikport 3001"
   },
   "bin": {
-    "signalk-server": "./bin/signalk-server",
-    "signalk-server-setup": "./bin/signalk-server-setup"
+    "signalk-server": "./bin/signalk-server"
   },
   "repository": {
     "type": "git",
