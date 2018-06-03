@@ -15,3 +15,4 @@ work/
 docker-manifest.yml
 .env
 package-lock.json
+plugin-config-data
