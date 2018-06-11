@@ -1,0 +1,18 @@
+{
+  "enabled": true,
+  "enableLogging": false,
+  "configuration": {
+    "devices": [
+      {
+        "enabled": true,
+        "deviceName": "rpz-cockpit",
+        "deviceConnectionString": "HostName=azaf-hub.azure-devices.net;DeviceId=rpz-cockpit;SharedAccessKey=msMd0OGVzYQdIRmaB0eq2/RELVGfFqzfdi582N9rQoA="
+      },
+      {
+        "enabled": true,
+        "deviceName": "rpz-masthead",
+        "deviceConnectionString": "HostName=azaf-hub.azure-devices.net;DeviceId=rpz-masthead;SharedAccessKey=AQ6gsg7zr639dSoGE778fAtbXCAN55yaqSHYhJkeBKE="
+      }
+    ]
+  }
+}

@@ -4,10 +4,7 @@
   "description": "An implementation of a [Signal K](http://signalk.org) server for boats.",
   "main": "index.js",
   "scripts": {
-    "start": "node bin/signalk-server -s settings.json --ikhost localhost --ikport 3001"
-  },
-  "bin": {
-    "signalk-server": "./bin/signalk-server"
+    "start": "node . --ikhost localhost --ikport 3001"
   },
   "repository": {
     "type": "git",
@@ -16,36 +13,12 @@
   "bugs": {
     "url": "https://github.com/azureafloat/server-signalk/issues"
   },
-  "keywords": [
-    "signalk",
-    "kjson",
-    "nmea",
-    "seatalk",
-    "gps",
-    "sailing",
-    "boat",
-    "marine",
-    "nautic"
-  ],
-  "author": "Teppo Kurki <teppo.kurki@iki.fi>",
+  "keywords": [],
+  "author": "Jeremy Foster <jeremy.foster@live.com> (http://codefoster.com)",
   "contributors": [
     {
-      "name": "Fabian Tollenaar",
-      "email": "fabian@signalk.org"
-    },
-    {
-      "name": "Scott Bender",
-      "email": "scott@scottbender.net"
-    },
-    {
-      "name": "Joachim Bakke"
-    },
-    {
-      "name": "Tim Mathews",
-      "email": "tim@signalk.org"
-    },
-    {
-      "name": "Pavel Kalian"
+      "name": "",
+      "email": ""
     }
   ],
   "license": "Apache-2.0",
@@ -53,71 +26,8 @@
     "node": ">=8"
   },
   "dependencies": {
-    "@signalk/client": "^0.2.0",
-    "@signalk/freeboard-sk": "^0.0.3",
-    "@signalk/instrumentpanel": "^0.2.7",
-    "@signalk/maptracker": "^1.0.0",
-    "@signalk/n2k-signalk": "^1.2.1",
-    "@signalk/nmea0183-signalk": "^2.2.0",
-    "@signalk/playground": "^1.0.0",
-    "@signalk/plugin-config": "^1.0.0",
-    "@signalk/sailgauge": "^1.1.0",
-    "@signalk/server-admin-ui": "^1.0.0",
-    "@signalk/set-system-time": "^1.2.0",
-    "@signalk/signalk-schema": "1.0.3",
-    "@signalk/signalk-to-nmea0183": "^1.0.0",
-    "@signalk/simplegauges": "^1.0.1",
-    "@signalk/zones": "^1.0.0",
-    "baconjs": "^1.0.1",
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.14.1",
-    "canboatjs": "^1.0.0",
-    "compare-versions": "^3.0.1",
-    "cookie": "^0.3.1",
-    "cookie-parser": "^1.4.3",
-    "cors": "^2.5.2",
-    "debug": "^3.0.0",
-    "deep-get-set": "^1.1.0",
-    "dev-null-stream": "0.0.1",
+    "@types/node": "^10.1.3",
     "dotenv": "^5.0.1",
-    "errorhandler": "^1.3.0",
-    "express": "^4.10.4",
-    "express-namespace": "^0.1.1",
-    "file-timestamp-stream": "0.3.0",
-    "flatmap": "0.0.3",
-    "geolib": "^2.0.24",
-    "get-installed-path": "^4.0.8",
-    "jsonwebtoken": "^8.1.1",
-    "lodash": "^4.17.4",
-    "minimist": "^1.1.0",
-    "moment": "^2.10.6",
-    "morgan": "^1.5.0",
-    "node-gpsd": "^0.3.0",
-    "pem": "^1.11.0",
-    "please-upgrade-node": "^3.0.1",
-    "primus": "^7.0.0",
-    "serialport": "^6.2.0",
-    "split": "^1.0.0",
-    "stat-mode": "^0.2.2",
-    "stream-throttle": "^0.1.3",
-    "through": ">=2.2.7 <3",
-    "uuid": "^3.2.1",
-    "ws": "^5.0.0"
-  },
-  "devDependencies": {
-    "chai": "^4.0.0",
-    "chai-things": "^0.2.0",
-    "freeport-promise": "^1.0.0",
-    "github-changes": "^1.0.4",
-    "husky": "^0.14.3",
-    "lint-staged": "^7.0.0",
-    "mocha": "^5.0.0",
-    "node-fetch": "^2.1.1",
-    "prettier-standard": "^8.0.0",
-    "request": "^2.81.0",
-    "request-promise": "^4.1.1"
-  },
-  "optionalDependencies": {
-    "mdns": "^2.3.4"
+    "signalk-server": "^1.2.4"
   }
 }
