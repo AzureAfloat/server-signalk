@@ -4,7 +4,7 @@
   "description": "An implementation of a [Signal K](http://signalk.org) server for boats.",
   "main": "index.js",
   "scripts": {
-    "start": "node . --ikhost localhost --ikport 3001"
+    "start": "node . --ik-host localhost --ik-port 3001"
   },
   "repository": {
     "type": "git",

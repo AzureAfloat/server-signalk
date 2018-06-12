@@ -21,14 +21,18 @@
       "id": "iKommunicate",
       "pipeElements": [
         {
-          "type": "providers/mdns-ws",
+          "type": "signalk-websocket-provider",
           "optionMappings": [
             {
-              "fromAppProperty": "argv.ikhost",
+              "fromAppProperty": "argv.ik-url",
+              "toOption": "url"
+            },
+            {
+              "fromAppProperty": "argv.ik-host",
               "toOption": "host"
             },
             {
-              "fromAppProperty": "argv.ikport",
+              "fromAppProperty": "argv.ik-port",
               "toOption": "port"
             }
           ]
